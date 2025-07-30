@@ -27,8 +27,6 @@
 
 
 export function compareDate  (day1,day2) {
-
-
     if(day1<day2)
     {
         return true;
@@ -36,7 +34,15 @@ export function compareDate  (day1,day2) {
     else
     {
         return false;
-    }
-    
-    
+    }   
 }
+
+
+
+Cypress.Commands.add('buildBasicData', (basicData,timestamp) => {
+   for(let key in basicData)
+   {
+    basicData[key]= basicData[key]+timestamp
+   }
+   cy.wrap(basicData)
+})

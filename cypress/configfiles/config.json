@@ -2,7 +2,7 @@
     "defaultCommandTimeout": 5000,
     "viewportWidth": 1200,
     "viewportHeight": 800,
-    "requestTimeout":10000
-
+    "requestTimeout":10000,
+    "testIsolation": false
 
 }	
