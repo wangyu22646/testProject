@@ -19,7 +19,6 @@ context('template ', () => {
   it('check license expired',function() {
     let admindatas=this.permissiondata.admin
     cy.loginWithAdminPermission(admindatas.username,admindatas.password,admindatas.inferred_region,admindatas.active_user,admindatas.name,admindatas.active_org) 
- 
 
   })
 })
