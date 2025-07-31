@@ -32,6 +32,34 @@ further:
 how to deal with that: add deploy action, post deploy ,after deploy
 docker, jenkins, template and so on.
 
+
+eg: docker
+
+
+from image location
+
+ENV PROJECT_FOLDER /tmp/..
+
+RUN alias cypress.cmd="cypress"
+RUN mkdir= $PROJECT_FOLDER
+copy 
+
+RUN  npm install --loglevel verbose
+RUN chmod 777 -R $PROJECT_FOLDER
+
+2. with api integrated
+some results might would better get from the api response, can integrate as well. especially cases of permisssion check
+
+3. DB 
+
+like "tasks=sqlServer=loadDBplugin(config.db) 
+on ('task',tasks)"
+import sqlSever fron cypress-sql-server
+
+input env into cypress.config.json
+
+cy.sqlServer(sql)
+
 CronJobs..
 
 

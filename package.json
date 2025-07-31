@@ -1,10 +1,11 @@
 {
-  "name": "kongsubject1",
+  "name": "kongsubject",
   "version": "1.0.0",
   "main": "index.js",
 
   "scripts": {
-    "service": "cypress run --spec 'cypress/e2e/service.cy.js'"
+    "service": "cypress run --spec 'cypress/e2e/service.cy.js'",
+    "regression":"cypress cun --env grepTags-e2e"
   },
   "keywords": [],
   "author": "",
